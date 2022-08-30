@@ -37,4 +37,4 @@ jobs:
           #setting json 
           node a
           #update cloudfront 
-          aws cloudfront update-distribution --id E2WIUYQR3SAQ2K --distribution-config file://${DISTRIBUTION_CLOUDFRONT_CONFIG} --if-match #etag
+          aws cloudfront update-distribution --id E2WIUYQR3SAQ2K --distribution-config file://${DISTRIBUTION_CLOUDFRONT_CONFIG} --if-match cat ${ETAG}
