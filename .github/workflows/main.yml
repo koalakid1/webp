@@ -35,6 +35,7 @@ jobs:
           echo "s3"
           aws lambda update-function-code --region us-east-1 --function-name webp --s3-bucket webp-zip --s3-key webp.zip --publish > ${LAMBDA_VERSION_FILE}
           echo "lambda update"
+          cat ${LAMBDA_VERSION_FILE}
           #get cloudfront config
           aws cloudfront get-distribution-config --id ${AWS_CLOUDFRONT_ID} > ${GET_CLOUDFRONT_CONFIG}
           echo "cloudfront get config"
