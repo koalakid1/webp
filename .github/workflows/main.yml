@@ -27,5 +27,6 @@ jobs:
           # aws cli - deploy code
           aws s3 cp --region us-east-1 webp.zip s3://webp-zip
           aws lambda update-function-code --region us-east-1 --function-name webp --s3-bucket webp-zip --s3-key webp.zip
+          aws cloudfront update-function --region us-east-1 --name webp
 
 
