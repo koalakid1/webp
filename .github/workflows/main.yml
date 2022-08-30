@@ -27,6 +27,7 @@ jobs:
           DISTRIBUTION_CLOUDFRONT_CONFIG: distrib-config.json
           ETAG: eTag.txt
         run: |
+          aws --version
           # zip
           zip -r webp.zip .
           # aws cli - deploy code
