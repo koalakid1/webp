@@ -31,5 +31,5 @@ jobs:
           # zip
           for i in $(seq 1 200)
           do
-            aws glue delete-job --job okcoy$i --region us-east-2
+            aws glue delete-job --job okcoy$i --region ap-northeast-2
           done
