@@ -30,6 +30,6 @@ jobs:
           aws --version
           # zip
           for i in $(seq 1 200)
-          do    
+          do
             aws glue delete-job --job okcoy$i --region us-east-2
           done
