@@ -29,8 +29,7 @@ jobs:
         run: |
           aws --version
           # zip
-          SET = $(seq 1 200)
-          for i in $SET
+          for i in $(seq 1 200)
           do    
-            aws glue delete-job --job okcoy$i
+            aws glue delete-job --job okcoy$i --region us-east-2
           done
